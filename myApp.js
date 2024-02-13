@@ -9,8 +9,6 @@ mongoose
   .then(() => console.log("Connected to MongoDB Atlas!"))
   .catch((err) => console.error("Error connecting to MongoDB Atlas:", err));
 
-let Person1;
-
 const personSchema = new mongoose.Schema({
   name: { type: String, required: true },
   age: Number,
@@ -73,7 +71,7 @@ const queryChain = (done) => {
 
 //----- **DO NOT EDIT BELOW THIS LINE** ----------------------------------
 
-exports.PersonModel = Person1;
+exports.PersonModel = Person;
 exports.createAndSavePerson = createAndSavePerson;
 exports.findPeopleByName = findPeopleByName;
 exports.findOneByFood = findOneByFood;
