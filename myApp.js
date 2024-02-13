@@ -51,9 +51,9 @@ const createManyPeople = (arrayOfPeople, done) => {
     },
   ];
 
-  const morePersons = new Person(arrayOfPeople);
+  const morePersons = new Person(Peopledata);
 
-  morePersons.create(arrayOfPeople, (err, data) => {
+  morePersons.create(Peopledata, (err, data) => {
     if (err) return done(err);
     done(null, data);
   });
