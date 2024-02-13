@@ -9,7 +9,7 @@ mongoose
   .then(() => console.log("Connected to MongoDB Atlas!"))
   .catch((err) => console.error("Error connecting to MongoDB Atlas:", err));
 
-let Person;
+let Person1;
 
 const personSchema = new mongoose.Schema({
   name: { type: String, required: true },
