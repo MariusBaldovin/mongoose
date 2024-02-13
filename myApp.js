@@ -33,7 +33,7 @@ const createAndSavePerson = (done) => {
 };
 
 const createManyPeople = (arrayOfPeople, done) => {
-  const arrayOfPeople = [
+  const Peopledata = [
     {
       name: "John Doe",
       age: 30,
